@@ -1,0 +1,41 @@
+*{
+    box-sizing : border-box;
+
+}
+header,footer{
+    background-color: bisque;
+    padding: 25px;
+    border: 1px solid  black;
+    border-radius: 20px;
+    text-align: center;
+}   
+    
+    
+    footer{
+        position:fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+
+.galeria{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap : 10px;
+        width: 80%;
+        margin: auto;
+
+}
+
+.galeria > img{
+    width: 100%;
+    border: 3px solid blue;
+    transition: all 1s ease;
+    
+}  
+.galeria > img:hover{
+    transform: scale(0.8) rotate(5deg) translate(5px,5px);
+}
+
+
+
+
